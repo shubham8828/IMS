@@ -1,0 +1,129 @@
+.payment-page{
+  background-color: #ffffff7d;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: auto;
+  box-sizing: border-box;
+  margin: 5px;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+  .payment-container,
+  .payment-success {
+    border-radius: 8px;
+    margin: 5px;
+  }
+  
+  .payment-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 5px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .invoice-summary p,
+  .payment-form label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling the input fields and select dropdown */
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Success Message Styles */
+  
+  .payment-success {
+    text-align: center;
+  }
+  
+  .payment-success h1 {
+    color: #28a745;
+  }
+  
+  .payment-data {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .payment-data pre {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    word-wrap: break-word;
+  }
+   
+  /* Invoice Summary */
+  .invoice-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-summary p {
+    font-size: 1rem;
+    color: #333;
+  }
+  

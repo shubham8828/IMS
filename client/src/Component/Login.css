@@ -1,0 +1,106 @@
+/* Overall page background */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 20px;
+}
+
+/* Card styling */
+.auth-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling with modern text shadow */
+.modern-title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.user-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Form styling */
+.auth-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label styling */
+.modern-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Input styling with focus effect */
+.modern-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.modern-input:focus {
+  border-color: #9b59b6;
+  outline: none;
+}
+
+/* Button styling */
+.modern-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #9b59b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modern-btn:hover {
+  background-color: #8e44ad;
+}
+
+/* Link styling */
+.forgot-password {
+  margin-top: 15px;
+}
+
+.modern-link {
+  color: #9b59b6;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.modern-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,62 @@
+
+.chart-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.900);
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-title {
+    text-align: center;   
+    font-size:1.1rem;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .chart-wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+  }
+  
+  .chart-box {
+    width: 40%;
+    min-width: 250px; /* Ensure charts have a minimum width */
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-box h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color:black;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 700px) {
+    .chart-wrapper {
+      flex-direction: column; /* Stack charts vertically */
+      align-items: center;
+    }
+  
+    .chart-box {
+      width: 80%; /* Make charts larger on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+
+    .chart-box h3 {
+      font-size: 1.1rem;
+    }
+  }
+  

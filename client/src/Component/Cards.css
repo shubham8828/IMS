@@ -1,0 +1,121 @@
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px; 
+    height: auto;
+    width:auto;
+    margin: auto;
+  }
+  
+  .home-box {
+    flex: 1;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(50, 75, 105, 0.85), rgba(25, 50, 70, 0.85));
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-box h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .home-box p {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .home-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    
+    h2 {
+      font-size: 1.6rem; 
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* For mobile devices (width less than 768px) */
+  @media (max-width: 768px) {
+      .card-container{
+        grid-template-columns: 1fr 1fr;
+      }
+  
+   
+  
+    .home-box h1 {
+      font-size: 1.2rem; /* Smaller font for titles */
+    }
+  
+    .home-box p {
+      font-size: 0.9rem;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For small mobile devices (width less than 500px) */
+  @media (max-width: 500px) {
+  
+    .card-container{
+      grid-template-columns: 1fr ;
+    }
+    .home-box {
+      padding: 10px; /* Reduce padding for very small screens */
+    }
+  
+    .home-box h1 {
+      font-size: 1rem;
+    }
+  
+    .home-box p {
+      font-size: 0.8rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    h3 {
+      font-size: 0.9rem;
+    }
+   
+  }
+  

@@ -1,0 +1,257 @@
+
+/* Container Styles */
+.new-invoice-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff69;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .search{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center ;
+  }
+  /* Header Styles */
+  .new-invoice-heading {
+    font-size: 1.8rem;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Form and Row Styles */
+  .first-row {
+    display: flex;
+    gap: 1%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .first-row input {
+    padding: 12px;
+    width: 32%;
+    border: 1px solid #d1d8e0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .first-row input:focus {
+    border-color: #4e89f9;
+    box-shadow: 0 0 5px rgba(78, 137, 249, 0.5);
+  }
+  
+  .users-search{
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: auto;
+  }
+  
+  /* Button Styles */
+  .add-btn {
+    margin-top: 20px;
+    padding: 12px 18px;
+    border: none;
+    background: linear-gradient(135deg, #4e89f9, #00c2ff);
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #0091d5);
+    transform: translateY(-3px);
+  }
+  
+  /* Product List and Wrapper Styles */
+  .product-wrapper,.invoice-results {
+    background: #f7f9fc;
+    border-radius: 12px;
+    padding: 5px;
+    overflow-x: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .invoice-results::-webkit-scrollbar{
+    display: none;
+  }
+
+  .modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .modern-table thead {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .modern-table th,
+  .modern-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .modern-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .modern-table tfoot {
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  
+  /* Responsive Design */
+  
+  /* For screens 1024px and below */
+  @media (max-width: 1024px) {
+    .new-invoice-container {
+      width: 85vw;
+    }
+  
+    .first-row input {
+      width: 48%;
+    }
+  
+    .product-list p {
+      width: 25%;
+    }
+  }
+  
+  /* For screens 800px and below */
+  @media (max-width: 800px) {
+    .new-invoice-container {
+      width: 90vw;
+    }
+  
+    .first-row input {
+      width: 100%;
+    }
+  
+    .product-list p {
+      width: 30%;
+    }
+  
+    .new-invoice-heading {
+      font-size: 1.6rem;
+    }
+  
+    .total-wrapper p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* For screens 600px and below */
+  @media (max-width: 600px) {
+    .new-invoice-container {
+      width: 80vw;
+      padding: 15px;
+    }
+  
+    .new-invoice-heading {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .first-row {
+      flex-direction: column;
+    }
+  
+    .first-row input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .add-btn {
+      width: 100%;
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .product-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .product-list p {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    .total-wrapper {
+      justify-content: center;
+    }
+  
+    .total-wrapper p {
+      font-size: 1.1
+    }
+  }
+  
+  /* For screens 400px and below */
+  @media (max-width: 400px) {
+    .new-invoice-container {
+      width: 85vw;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+    .new-invoice-heading {
+      font-size: 1.4rem;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    .first-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .first-row input {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .add-btn {
+      width: 100%;
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .product-list p {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  
+    .total-wrapper p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .product-wrapper {
+      padding: 15px;
+      box-shadow: none;
+    }
+  }
+  

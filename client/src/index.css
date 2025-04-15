@@ -1,0 +1,60 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-width: 300px;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #4a90e2 #f1f1f1; /* Thumb color and track color */
+}
+
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the track */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #4a90e2, #56cfe1); /* Gradient color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #3b78d8, #4fb8d5); /* Darker gradient on hover */
+}
+
+
+.main{
+  height: auto;
+  min-height: 80vh;
+  margin-top: 70px;
+}
+
+.download-btn{
+  height: 50px;
+  font-size: 50px;
+  width: max-content;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: fixed;
+  top:80%;
+  right: 1%;
+}
+
+
+
+
+
+ 

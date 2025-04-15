@@ -1,0 +1,175 @@
+
+.invoice-container {
+  padding:10px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width:900px;
+  box-sizing: border-box;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 5px;
+  }
+  
+  .header-container {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 15px;
+  }
+  
+  .Company-logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .header-conatainer h1 {
+    font-size: 25px;
+    color: rgb(3, 131, 3);
+    margin: 20px 0;
+  }
+  
+  .user-detail-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .userName {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Audiowide", sans-serif;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  
+  .address {
+    margin-top: -10px;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+  
+  .contact {
+    margin-top: -15px;
+    font-size: 13px;
+  }
+  
+  .detail-container {
+    margin-top: 30px;
+  }
+  
+  .main-detail-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .product-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(156, 199, 156, 0.541);
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  th {
+    background: rgb(22, 128, 22);
+    color: white;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .print-btn {
+    border: none;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100px;
+    height: 40px;
+  }
+  
+  .invoice-main-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .invoice-main-footer p {
+    font-size: 14px;
+  }
+  
+  .btn-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .customer,
+  .nameCap {
+    text-transform: capitalize;
+  }
+  
+  .actions-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #004085;
+    transform: scale(1);
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .no-border {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  

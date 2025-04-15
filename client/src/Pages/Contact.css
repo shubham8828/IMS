@@ -1,0 +1,107 @@
+
+/* ------------- Contact Page CSS --------------   */
+
+.contact-container {
+  padding: 1.5rem;
+  background-color: #ffffff7d;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin:10px;
+  width: auto;
+  min-height: 90vh;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  }
+  
+  /* Header */
+  .contact-header {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Text Styling */
+  .contact-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Icons */
+  .contact-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #333;
+  }
+  
+  /* Links */
+  .contact-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Strong Text */
+  .contact-text strong {
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 15px;
+    }
+  
+    .contact-header {
+      font-size: 1.8rem;
+    }
+  
+    .contact-text {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-container {
+      padding: 10px;
+    }
+  
+    .contact-header {
+      font-size: 1.5rem;
+    }
+  
+    .contact-text {
+      font-size: 14px;
+    }
+  
+    .contact-link {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .contact-container {
+      margin: 20px 5px;
+      padding: 10px;
+    }
+  
+    .contact-header {
+      font-size: 1.4rem;
+    }
+  
+    .contact-text {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  
+    .contact-link {
+      font-size: 13px;
+    }
+  }
+  

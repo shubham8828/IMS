@@ -1,0 +1,235 @@
+
+.team-container{
+  background-color: #ffffff7d;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width:auto;
+  box-sizing: border-box;
+  margin:auto;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.projectCard {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 1opx;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 20px;
+    width:max-content;
+    max-width: 800px;
+
+  }
+  
+  .projectTitle {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+.teamSection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    background-color: #ffffffa1;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 350px;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .imagePlaceholder {
+    background-color: #ddd;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .placeholderIcon {
+    font-size: 50px;
+    color: #aaa;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .profession,
+  .experience,
+  .email {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  
+  .team-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .team-link:hover {
+    text-decoration: underline;
+  }
+  
+  .team-socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .team-icon {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .card {
+      flex: 1 1 calc(70% - 20px);
+    }
+  
+    .projectTitle {
+      font-size: 1.8rem;
+    }
+  
+    .name {
+      font-size: 1.4rem;
+    }
+  
+    .title,
+    .profession,
+    .experience,
+    .email {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 calc(100% - 20px);
+    }
+  
+    .projectTitle {
+      font-size: 1.6rem;
+    }
+  
+    .name {
+      font-size: 1.3rem;
+    }
+  
+    .title,
+    .profession,
+    .experience,
+    .email {
+      font-size: 0.85rem;
+    }
+  }
+  /* Media Queries for Extra Small Screens (415px) */
+@media (max-width: 415px) {
+  .card {
+    margin: 10px auto; /* Add spacing */
+    width: 50%;
+  }
+
+  .projectCard {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .projectTitle {
+    font-size: 1.4rem; /* Smaller font size */
+    line-height: 1.2;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .title,
+  .profession,
+  .experience,
+  .email {
+    font-size: 0.85rem;
+  }
+
+  .placeholderIcon {
+    font-size: 40px;
+  }
+
+  .team-icon {
+    font-size: 18px;
+  }
+}
+
+/* Media Queries for Very Small Screens (360px) */
+@media (max-width: 360px) {
+  .card {
+    flex: 1 1 100%;
+    margin: 10px auto;
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .projectCard {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .projectTitle {
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.1;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .title,
+  .profession,
+  .experience,
+  .email {
+    font-size: 0.75rem; /* Further reduce font size */
+  }
+
+  .placeholderIcon {
+    font-size: 35px; /* Reduce size */
+  }
+
+  .team-icon {
+    font-size: 16px; /* Smaller icon size */
+  }
+}

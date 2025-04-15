@@ -1,0 +1,165 @@
+
+/* ---------------- Profile Page CSS ---------------------- */
+
+.profile-container {
+
+    width: 50%;
+    margin: 20px auto;
+    background-color: #ffffff7d;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px 0%;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+  }
+  
+  /* Form Styles */
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: black;
+    /* Darker text color for readability */
+  }
+  
+  .form-group input,select {
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    /* Blue border on focus for accessibility */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    /* Soft shadow on focus */
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    padding: 12px;
+    background-color: #007bff;
+    /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: translateY(-2px);
+    /* Subtle lift effect on hover */
+  }
+  
+  /* Profile Image Styling */
+  .profile-image,
+  .image-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .profile-image img {
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  
+  /* For screens up to 1024px */
+  @media screen and (max-width: 1024px) {
+    .profile-container {
+      width: 80%;
+      padding: 25px 5%;
+    }
+  
+    .form-group label,
+    .submit-btn {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For screens up to 800px */
+  @media screen and (max-width: 800px) {
+    .profile-container {
+      width: 85%;
+      padding: 20px 5%;
+    }
+  
+    .form-group input {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* For screens up to 600px */
+  @media screen and (max-width: 600px) {
+    .profile-container {
+      width: 90%;
+      padding: 18px 4%;
+    }
+  
+    .form-group input {
+      font-size: 0.9rem;
+    }
+  
+    .submit-btn {
+      padding: 10px;
+    }
+  
+    .profile-image img {
+      height: 90px;
+      width: 90px;
+    }
+  }
+  
+  /* For screens up to 400px */
+  @media screen and (max-width: 400px) {
+    .profile-container {
+      width: 95%;
+      padding: 15px 3%;
+    }
+  
+    .form-group input {
+      font-size: 0.85rem;
+    }
+  
+    .submit-btn {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .profile-image img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  
+  
