@@ -15,7 +15,7 @@ const Typing = () => {
     };
 
     axios
-      .get(`${import.meta.env.VITE_API_URL}api/user/current`, { headers })
+      .get(`${import.meta.env.VITE_API_URL}/api/user/current`, { headers })
       .then((response) => {
         const { user } = response.data;
         setUser(user);
