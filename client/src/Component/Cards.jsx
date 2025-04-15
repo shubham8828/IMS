@@ -59,7 +59,7 @@ const Cards = ({ isAdmin }) => {
 
     // Fetch users data
     axios
-      .get(`${import.meta.env.VITE_API_URL}api/user/all`, { headers })
+      .get(`${import.meta.env.VITE_API_URL}/api/user/all`, { headers })
       .then((response) => {
         setTotalUsers(response.data.users.length); // Total number of users
         const cities = new Set(response.data.users.map((user) => user.city)); // Unique cities
