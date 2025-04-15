@@ -10,7 +10,7 @@ const app = express();
 app.use(cors(
     
     {
-        origin: ["https://ims-sigma.vercel.app/"],
+        origin: ["https://ims-sigma.vercel.app"],
         methods: ["POST", "GET","PUT","DELETE"],
         credentials: true
     }
