@@ -15,7 +15,7 @@ app.use(cors({
   
 app.options("*", cors()); // optional but good for preflight support
   
-app.use(express.json());
+app.use(express.json());  //
 
 mongoose.connect(process.env.URL)
     .then(() => {
