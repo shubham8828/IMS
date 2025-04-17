@@ -66,7 +66,7 @@ const Invoices = () => {
 
     try {
       await axios
-        .delete(`http://localhost:4000/api/invoice/delete/${id}`, { headers })
+        .delete(`${import.meta.env.VITE_API_URL}/api/invoice/delete/${id}`, { headers })
         .then((res) => {
           toast.success(res.data.msg, { position: "top-center" });
           setAllInvoices(allInvoices.filter((invoice) => invoice._id !== id));
